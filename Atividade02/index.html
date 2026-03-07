@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Simples</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Crie sua Conta</legend>
+            <br>
+            <label for="nome">Nome:</label>
+            <input type="text" maxlength="15" id="nome" required>
+            <br><br>
+            <label for="email" >Email:</label>
+            <input placeholder="******@****.com" type="email" required id="eml">
+            <br><br>
+            <label for="senha">Senha:</label>
+            <input placeholder="Mínimo 8 caracteres" type="password" minlength="8" maxlength="25" required id="pw">
+            <br><br>
+            <b>Gênero:</b>
+            <br>
+            <input type="radio" id="fem" name="genero" value="F">
+            <label for="fem"> Feminino</label>
+            <input type="radio" id="masc" name="genero" value="M">
+            <label for="masc">Masculino</label>
+            <br><br>
+            <b>Biografia:</b>
+            <br>
+            <textarea placeholder="Conte mais sobre você." rows="5" cols="30"></textarea>
+            <br><br>
+            <input type="checkbox" required id="termos">
+            <label for="termos">Eu li e aceito os <a href="https://google.com/">termos de uso</a>.</label>
+            <br><br>
+            <button type="submit">Enviar</button>    
+        </fieldset>
+    </form>
+</body>
+
+</html>
