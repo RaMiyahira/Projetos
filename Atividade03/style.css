@@ -1,0 +1,108 @@
+body {
+    background-color: lightsteelblue;
+}
+
+header {
+    font-family: "Coming Soon", cursive;
+    font-size: 33px;
+    border-radius: 15px;
+    background-color: white;
+    margin: auto;
+    padding: 5px;
+    width: 675px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.subtitulo h6 {
+    margin: 0;
+}
+    article{
+
+        .subtitulo{
+            text-align: center;
+        }
+        .filme1{
+            background-color: white;
+            border-radius: 15px;
+            margin: 40px auto;
+            padding: 20px;
+            padding-top: 5px;
+            max-width: 675px;
+            display: flex;
+            p{
+                color: #aaa5b0;
+            }
+            img{
+                width: 250px;
+                background-color: black;
+                border-radius: 15px;
+            }
+        }
+        .filme2{
+            background-color: white;
+            border-radius: 15px;
+            margin: 40px auto;
+            padding: 20px;
+            padding-top: 5px;
+            max-width: 675px;
+            display: flex;
+            p{
+                color: #aaa5b0;
+            }
+            img{
+                width: 250px;
+                background-color: black;
+                border-radius: 15px;
+            }
+        }
+        .filme3{
+            background-color: white;
+            border-radius: 15px;
+            margin: 40px auto;
+            padding: 20px;
+            padding-top: 5px;
+            max-width: 675px;
+            display: flex;
+            p{
+                color: #aaa5b0;
+            }
+            img{
+                width: 250px;
+                background-color: black;
+                border-radius: 15px;
+            }
+        }
+    }
+.final {
+    background-color: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 15px;
+    max-width: 675px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center
+}
+
+.final h3 {
+    margin-top: 0;
+}
+
+.final a {
+    text-decoration: none;
+    color: black;
+}
+
+.final a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #333333;
+}
