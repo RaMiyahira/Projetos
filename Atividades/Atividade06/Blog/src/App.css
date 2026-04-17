@@ -1,0 +1,152 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #efeff0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  width: 100%;
+  min-height: 100vh;
+}
+
+img {
+  width: 250px;
+}
+
+.icone {
+  width: 150px;
+  margin-right: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #2b2c30;
+  grid-area: header;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+  font-size: 35px;
+  padding-right: 3ch;
+}
+
+header nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+header .paginas {
+  display: flex;
+  gap: 60px;
+  font-size: 17px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.paginas a {
+  color: white;
+  text-decoration: none;
+}
+
+.paginas a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+main {
+  grid-area: main;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.filme1,
+.filme2,
+.filme3 {
+  background-color: white;
+  display: flex;
+  max-width: 1050px;
+  align-self: self-start;
+  border-bottom: 2px solid #ccc;
+}
+
+aside {
+  text-align: center;
+  grid-area: aside;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  align-self: self-start;
+  margin: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+aside a {
+  text-decoration: none;
+  color: black;
+}
+
+aside a:hover {
+  text-decoration: underline;
+  color: red;
+  cursor: pointer;
+}
+
+aside ul {
+  list-style-position: inside;
+  text-align: start;
+  padding: 0;
+  margin: 0 auto;
+}
+
+aside li {
+  color: red;
+}
+
+.titulosoutros {
+  font-size: 25px;
+}
+
+.outros {
+  font-size: 18px;
+}
+
+.link1,
+.link2,
+.link3 {
+  border-bottom: 1px solid #ccc;
+}
+
+footer {
+  background-color: #2b2c30;
+  grid-area: footer;
+  text-align: center;
+  color: white;
+  gap: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "aside"
+      "footer";
+  }
+}
