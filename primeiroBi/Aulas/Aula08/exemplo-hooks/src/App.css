@@ -1,0 +1,9 @@
+#countainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  height: 80vh;
+  background-color: darkslategray;
+  text-align: center;
+  color: aliceblue;
+}

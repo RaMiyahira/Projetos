@@ -1,5 +1,11 @@
 body {
     background-color: lightsteelblue;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:        
+        "header header"
+        "main aside"
+        "footer footer";
 }
 
 header {
@@ -11,10 +17,24 @@ header {
     padding: 5px;
     width: 675px;
     text-align: center;
+    grid-area: header;
 }
 
 header h1 {
     margin: 0;
+}
+
+header nav{
+        display: flex;
+        justify-content: center;
+    }
+
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: aside;
 }
 
 .subtitulo h6 {
@@ -105,4 +125,18 @@ footer {
     text-align: center;
     padding: 20px;
     color: #333333;
+    text-decoration-color: white;
+    grid-area: footer; 
 }
+
+@media (max-width: 768px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:        
+            "header"
+            "main"
+            "aside"
+            "footer";
+    }
+}   

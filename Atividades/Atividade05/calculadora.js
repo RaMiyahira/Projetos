@@ -1,5 +1,5 @@
-const valorConta = 255;
-const percentualGorjeta = 5;
+const valorConta = 100;
+const percentualGorjeta = 15;
 const totalGorjeta = (valorConta * (percentualGorjeta / 100));
 const totalPago = totalGorjeta + valorConta;
 

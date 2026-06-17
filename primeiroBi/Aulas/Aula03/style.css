@@ -1,0 +1,10 @@
+html{
+    height: 100vh;
+    background-color: red;
+}
+
+#container {
+    height: 200px;
+    width: 320px;
+    background-color: black;
+}
